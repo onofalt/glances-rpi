@@ -1,4 +1,4 @@
-FROM hypriot/rpi-python
+FROM balenalib/rpi-python
 RUN apt-get update && apt-get install -y gcc make  build-essential python-dev libev4 libev-dev
 RUN apt-get install -y vim
 RUN pip install glances[wifi,ip,folders,docker,cpuinfo,action]
