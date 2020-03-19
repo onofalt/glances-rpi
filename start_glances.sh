@@ -30,4 +30,4 @@ sed -i "s/^tags=.*/tags=$INFLUX_TAGS/g" /etc/glances/glances.conf
 sed -i "s/^prefix=$/#prefix=/g" /etc/glances/glances.conf
 sed -i "s/^tags=$/#tags=/g" /etc/glances/glances.conf
 
-/usr/local/bin/glances --export-influxdb --time 30 --quiet $GLANCES_OPTIONS
+/usr/local/bin/glances --time 30 --quiet $GLANCES_OPTIONS
